@@ -107,7 +107,3 @@ decisiones("sabado");
 
       default:
       console.log('Eres un adulto mayor');
-
-
-
-
