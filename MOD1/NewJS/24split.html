@@ -1,0 +1,24 @@
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>split</title>
+</head>
+<body>
+
+
+  <script>
+    var saludo = 'Hola buenos dias';
+    console.log(saludo);
+    var matriz_saludo = saludo.split(' ', 3);
+    console.log('La cantidad de elementos de la matriz_saludo es ' + matriz_saludo.length);
+
+    for(var dias = 0; dias < matriz_saludo.length; dias++){
+      console.log(matriz_saludo[dias]);
+    }
+  </script>
+
+</body>
+</html>

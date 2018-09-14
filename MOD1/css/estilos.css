@@ -1,0 +1,24 @@
+#cuadro1,#cuadro2{
+	width:200px;
+	height: 200px;
+	background: green;
+	margin: 5px;
+
+}
+
+.tamFin{
+	width: 80%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
+    transition: 5s all ease;
+}
+.caj2{
+	width:10%;
+	margin-left: 10px;
+	height:20%;
+	display :inline-block;
+	background-color: blueviolet;
+}

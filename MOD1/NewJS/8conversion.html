@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Conversión de variables</title>
+</head>
+<body>
+
+  <script>
+      // Cuando sumamos un numero con una cadena el numero se convierte en cadena
+       var producto = 'camiseta';
+       var precio1 = 2500;
+       var precio2  = 5000;
+       var res1 = producto + precio2;
+       console.log(res1);
+       console.log(typeof(res1));
+
+
+      //Cuando sumamos un boolean con una cadena el valor booleano se convierte en cadena
+      //
+       var casado = true;
+       var nombre = 'pablo';
+       var res2 = casado + nombre;
+       console.log("res2", res2);
+       console.log(typeof(res2));
+
+      //Si se suman un número y un valor booleano, el tipo booleano se convierte en un número.
+
+       var ahorros = 10000;
+      var bancarrota = false;
+      var res3 = bancarrota + ahorros;
+      console.log("res3", res3);
+      console.log(typeof(res3));
+
+      //parseInt() devuelve un valor entero no no hay ningun numero devuelve NaN
+      var numero = '12abc';
+      numero = parseInt(numero);
+      console.log(numero);
+      console.log(typeof(numero));
+      console.log(isNaN(numero));
+
+      //parseInt() devuelve un valor entero no no hay ningun numero devuelve NaN
+      var numero2 = '1.23abc';
+      numero2 = parseFloat(numero2);
+      console.log(numero2);
+      console.log(typeof(numero2));
+      console.log(isNaN(numero2));
+
+
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ambito de las variables</title>
+</head>
+<body>
+
+  <script>
+    /*function ambito(){
+      var local = "Soy una variable local";
+      console.log(local);
+    }
+
+    ambito();*/
+
+  /*  var global = "Soy una variable global";
+    function ambito(){
+
+    }
+    console.log(global);
+    ambito();
+    */
+    var mensaje = 'Estoy afuera';
+    function ambito(){
+
+      mensaje = "Estoy adentro";
+    }
+    ambito();
+    console.log(mensaje);
+
+  </script>
+
+</body>
+</html>

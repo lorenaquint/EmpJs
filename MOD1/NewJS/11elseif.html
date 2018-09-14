@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>else if</title>
+</head>
+<body>
+
+  <script>
+    var edad = prompt('Escriba su edad','en numeros solamente');
+    var ciudad = prompt('Escriba su ciudad de origen');
+    edad = parseInt(edad);
+
+    if(edad > 18){
+      console.log('Usted es mayor de edad');
+    }
+
+    else if(ciudad == 'bogota'){
+      console.log('Usted es de ' + ciudad);
+    }
+
+    else if(ciudad == 'medellin'){
+      console.log('Usted es de ' + ciudad);
+    }
+
+    else if(ciudad == 'cali'){
+      console.log('Usted es de ' + ciudad);
+    }
+
+    else{
+      console.log('Usted No es mayor de edad');
+    }
+  </script>
+
+
+</body>
+</html>
