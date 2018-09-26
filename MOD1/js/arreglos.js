@@ -261,7 +261,12 @@ function imprimirArray(numeros,texto = "")
       document.write("</ul>");
 
 }
+let numeros = [2,4,6,8,10];
 
+
+numeros.forEach(function(x){
+    console.log(x);
+});
 for (var i = 0; i < 6; i++) {
       var numero = parseInt(prompt("Ingrese el número",0));
       numeros.push(numero);

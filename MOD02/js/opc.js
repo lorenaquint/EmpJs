@@ -6,3 +6,12 @@ function comer(persona,comida)
 }
 console.log(comer());
 console.log("1uintero");
+
+btnComparar = document.getElementById("btnComparar");
+btnComparar.addEventListener("click",cambiar);
+var clase = btnComparar.className;
+console.log(clase);
+function cambiar(){
+    
+        btnComparar.classList.toggle("estilo1");
+}
