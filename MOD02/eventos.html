@@ -1,104 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eventos</title>
     <style>
-      #btnReg,#btnColor,#btnAdd,#btnAddAn,#btnOn,#btnOnAn{
-          background: black;
-          width: 300px;
-          color: white;
-          text-align: center;
-          font-style: bold;
-          font-size: 24px;
-          padding: 20px;
-          border-radius: 20px;
-          transition-property: color,background-color, width;
-            transition-duration: 2s, 3s,2s;
-            transition-timing-function: linear,ease-out,ease-out;
-            -webkit-transition-property: color,background-color, width;
-            -webkit-transition-duration: 2s, 3s, 2s;
-            -webkit-transition-timing-function: linear,ease-out,ease-out;
-            -moz-transition-property: color,background-color, width;
-            -moz-transition-duration: 2s, 3s,2s;
-            -moz-transition-timing-function: linear,ease-out,ease-out;
-      }
-      .animar{
-        color: #FFF;
-        background-color: #ED235D;
-        width: 650px;
-        transition-property: color,background-color, width;
-        transition-duration: 2s, 3s,5s;
-        transition-timing-function: linear,ease-out,ease-out;
-        -webkit-transition-property: color,background-color, width;
-        -webkit-transition-duration: 2s, 3s, 5s;
-        -webkit-transition-timing-function: linear,ease-out,ease-out;
-        -moz-transition-property: color,background-color, width;
-        -moz-transition-duration: 2s, 3s,5s;
-        -moz-transition-timing-function: linear,ease-out,ease-out;
-      }
-      .clear::after{
-           content: "";
-           display: block;
-           clear: both;  
-      }
+        
+    
 
-      img{
-          margin: 0 auto;
-          display: block;
-      }
+        .btnGeneral {
+            background: black;
+            width: 300px;
+            color: white;
+            text-align: center;
+            font-style: bold;
+            font-size: 24px;
+            padding: 20px;
+            border-radius: 20px;
+            transition-property: color, background-color, width;
+            transition-duration: 2s, 3s, 2s;
+            transition-timing-function: linear, ease-out, ease-out;
+            -webkit-transition-property: color, background-color, width;
+            -webkit-transition-duration: 2s, 3s, 2s;
+            -webkit-transition-timing-function: linear, ease-out, ease-out;
+            -moz-transition-property: color, background-color, width;
+            -moz-transition-duration: 2s, 3s, 2s;
+            -moz-transition-timing-function: linear, ease-out, ease-out;
+        }
+
+        .animar {
+            color: #FFF;
+            background-color: #ED235D;
+            width: 650px;
+            -webkit-transition: all 5s ease-out;
+            -moz-transition: all 5s ease-out;
+            -ms-transition: all 5s ease-out;
+            -o-transition: all 5s ease-out;
+            transition: all 5s ease-out;
+        }
+
+        .animar2 {
+            color: #FFF;
+            background-color: blueviolet;
+            width: 850px;
+            -webkit-transition: all 5s ease-out;
+            -moz-transition: all 5s ease-out;
+            -ms-transition: all 5s ease-out;
+            -o-transition: all 5s ease-out;
+            transition: all 5s ease-out;
+        }
+
+        .clear::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .cambiarColor {
+            background-color: aqua;
+        }
+
+        img {
+            margin: 0 auto;
+            display: block;
+        }
     </style>
 </head>
+
 <body>
     <p>
-        <button id="btnReg" onclick="alert('Preparado para el registro')">Registrar</button>  
+        <button class="btnGeneral" id="btnReg" onclick="alert('Preparado para el registro')">Registrar</button>
     </p>
     <p>
-        <button id="btnColor" onclick="changeColor()">Cambiar Color</button>  
+        <button class="btnGeneral" id="btnColor" onclick="changeColor()">Cambiar Color</button>
     </p>
     <p>
-        <button id="btnAdd">Add Event Listener</button>  
+        <button class="btnGeneral" id="btnAdd">Add Event Listener</button>
     </p>
     <p>
-        <button id="btnAddAn">Add Event Listener con Función Anónima</button>  
+        <button class="btnGeneral" id="btnAddAn">Add Event Listener con Función Anónima</button>
     </p>
     <p>
-        <button id="btnOn">onclick desde js</button>  
+        <button class="btnGeneral" id="btnOn">onclick desde js</button>
     </p>
     <p>
-            <button id="btnOnAn">onclick desde js con Anónima</button>  
-        </p>
-    
-    <img src="img/lamp_off.jpg" id="lamp"
-    
-    />
+        <button class="btnGeneral" id="btnOnAn">onclick desde js con Anónima</button>
+    </p>
+    <p>
+        <button class="btnGeneral" id="btnAnimar">Animar</button>
+    </p>
+    <p>
+        <button class="btnGeneral" id="btnAnimar2">Animar2</button>
+    </p>
+    <p>
+         <button class="btnGeneral" id="btnCambiarTexto">*</button>
+    </p>
+    <img src="img/lamp_off.jpg" id="lamp" />
 
     <div class="cajReg">
-            <h1>Inicio del Registro </h1>
-        </div>
-   <div>
-       <label for="cuadrado">Número: </label>
-       <input type="number" placeholder="Ingrese solo números" required id="inpNum"></input>
-       <button id="btnC">x<sup>2</sup></button>
-   </div>
+        <h1>Inicio del Registro </h1>
+    </div>
+    <div>
+        <label for="cuadrado">Número: </label>
+        <input type="number" placeholder="Ingrese solo números" required id="inpNum"></input>
+        <button id="btnC">x<sup>2</sup></button>
+    </div>
     <div class="clear"></div>
-   <div>
+    <div>
         <script type="text/javascript">
-            
-          </script>
-          </head>
-          <body>
+
+        </script>
+        </head>
+
+        <body>
             <label for="num">Número</label>
             <input type="text" size="24" id="num" onClick="vaciar()"><p>
-            <button id="btnSuma">+</button>
-            <button id="btnResta">-</button>
-            <button id="btnResult">=</button>
+                <button id="btnSuma">+</button>
+                <button id="btnResta">-</button>
+                <button id="btnResult">=</button>
             </p>
-   </div>
+    </div>
 
+    
+    <script src="js/eventos.js"></script>
+    </body>
 
- <script src="js/eventos.js"></script>
-</body>
 </html>

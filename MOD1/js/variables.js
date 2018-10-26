@@ -1,4 +1,4 @@
-'use strict'
+
 
 console.log("Estos son las variables");
 
@@ -235,13 +235,34 @@ console.log("edad", nombre);
 //Constantes
 
 var nombre = "Mariana";
+nombre = 4;
+console.log(nombre);
 const edad1 = 18;
 console.log("El nombre es: "+nombre+" y su edd es: "+edad);
 //edad1 = 27;
 console.log("El nombre es: "+nombre+" y su edd es: "+edad);
 
 
+//Operadores de comparación
 
+var valor1 = 5;
+var valor2 = "5";
+
+if(valor1 == valor2)
+{
+      console.log(valor1+" y "+valor2+" son iguales en valor");
+
+}
+if(valor1 === valor2)
+{
+      console.log(valor1+" y "+valor2+" son iguales en tipo y en valor "); 
+}
+else{
+      console.log(valor1+" y "+valor2+" no son iguales ni en tipo ni en valor");
+}
+
+var result = valor1 == valor2 ? 5:10;
+console.log("el resultaod es "+result);
 
 
 

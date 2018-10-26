@@ -12,6 +12,9 @@ let lamp = document.querySelector("#lamp");
 let inpNum = document.querySelector("#inpNum");
 // Desde una función
 
+ 
+
+
 function changeColor(){
     let color = btnColor.style.background ;
     if(color=="green")
@@ -27,6 +30,7 @@ function changeColor(){
     btnColor.style.border = "2px solid #CCC";
   
 }
+
 //Utilizando AddEventListener
 btnAdd.addEventListener("click",changeBox);
 function changeBox(){
@@ -64,6 +68,8 @@ btnOnAn.onclick = function(){
     caja.style.width = "80px";
     caja.style.height = "80px";
     caja.style.background = "black";
+    
+    
 }
 
 
@@ -82,22 +88,38 @@ btnOnAn.onmouseover = function(){
 }
 
 
-btnColor.onmouseover = function(){
-    btnColor.classList.toggle("animar");
-}
+/*
 
 
-btnOn.onmouseover = function(){
+document.querySelector("#btnAnimar").onmouseover = function(){
     //btnOn.style.background = "orange";
-    btnOn.classList.add("animar");
+   
+    /*btnAnimar.style.color = "#FFF";
+    btnAnimar.style.backgroundColor= "#ED235D";
+    btnAnimar.style.width= "650px";
+    btnAnimar.style.transition= "all 5s ease-out";   
+     */
+
+     /*
+    this.classList.add("animar");
     
 }
-
-btnOn.onmouseout = function(){
-    //btnOn.style.background = "green"
-    btnOn.classList.remove("animar");
+*/
+/*
+document.querySelector("#btnAnimar").onmouseout = function(){
+    //btnOn.style.background = "black"
+    /*btnAnimar.style.color = "#FFF";
+    btnAnimar.style.backgroundColor= "#000";
+    btnAnimar.style.width= "300px";
+    btnAnimar.style.transition= "all 5s ease-out"; 
+    */
+   /*
+   this.classList.remove("animar"); 
 }
+*/
 //Prender bonbillo
+
+
 
 lamp.onclick = function(){
     
@@ -134,6 +156,37 @@ function calcular() {
           
 function inic ()   {num = document.getElementById("num");}
 function vaciar () {num.value = "";}  
+
+let btnAnimar = document.querySelector("#btnAnimar");
+let btnAnimar2 = document.querySelector("#btnAnimar2");
+btnAnimar.onmouseover = myFunction;
+btnAnimar.onmouseout = myFunction2;
+btnAnimar2.onmouseout = myFunction3;
+function myFunction() {
+    
+    btnAnimar.classList.add("animar");
+   
+}
+function myFunction2() {
+    
+    btnAnimar.classList.remove("animar"); 
+}
+function myFunction3() {
+    
+    btnAnimar2.classList.toggle("animar2");
+   
+}
+
+let btnCambiarTexto = document.querySelector("#btnCambiarTexto");
+btnCambiarTexto.onmouseover = function(){
+    btnCambiarTexto.innerHTML = "1";
+};
+
+btnCambiarTexto.onmouseout = function(){
+    btnCambiarTexto.innerHTML = "*";
+}
+
+
 
 
 
