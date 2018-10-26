@@ -4,6 +4,7 @@
 ==================================*/
 var rep = prompt("Ingrese las repeticiones");
 for(var i = 0;i<rep;i++){
+	debugger;
 	console.log(i);
 }
 
